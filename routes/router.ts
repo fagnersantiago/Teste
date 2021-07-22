@@ -13,5 +13,5 @@ routes.post("/subtraction", checksIsBinary, substraction);
 routes.post("/split", checksIsBinary, split);
 routes.post("/rest", checksIsBinary, rest);
 routes.post("/multiplication", checksIsBinary, multiplication);
-
+routes.post("/");
 export default routes;

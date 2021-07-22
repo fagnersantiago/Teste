@@ -8,6 +8,7 @@ function checksIsBinary(
   const { firstNumber, secondNumber } = request.body;
   const firstnumberIsBinary = firstNumber.toString();
   const secondNumberIsBinary = secondNumber.toString();
+  //verify if is binary numbee
   if (
     firstnumberIsBinary.search(/[^0-1]/g) !== -1 ||
     secondNumberIsBinary.search(/[^0-1]/g) !== -1
@@ -17,7 +18,7 @@ function checksIsBinary(
         "It's only allowed binary number, please input a valid number and try again",
     });
   }
-
+  //parsing to decimal
   const firstNumberToDecimal = parseInt(firstNumber, 2);
   const secondNumberToDecimal = parseInt(secondNumber, 2);
 
